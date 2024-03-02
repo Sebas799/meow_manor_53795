@@ -91,3 +91,40 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+/*CONTACT US*/
+.aside-image-contact img{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.terms p{
+    text-align: justify;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 912px) {
+    .aside-image-contact img{
+        padding-top: 20px;
+    }
+
+    footer {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important; 
+    }
+    
+    footer > div {
+        width: 100% !important;
+        text-align: center !important; 
+        margin-bottom: 10px !important; 
+    }
+
+    .social-icons{
+        width: 20%;
+        margin: 0 auto;
+        gap: 10px;
+    }
+}

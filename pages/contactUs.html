@@ -53,37 +53,56 @@
     </head>
     <!-- MAIN CONTENT-->
     <main class="main-contact">
-        <div class="flex-container">
-        <!-- ASIDE  SECTION --> 
-        <section class="aside-container">
-            <aside class="img-aside-container">
-                <img src="../assets/img/aside-contactus.jpeg" alt="">
-            </aside>
-        </section>
-        <!-- FORM SECTION -->
-        <section class="form-section">
-            <form class="form">
-                <h2> Contact Us </h2>
-                <input type="text" id="name" placeholder="Full name" required>
-                <input type="text" id="email" placeholder="Email address" required>
-                <input type="string" id="phone" placeholder="Phone number (optional)">
-                <textarea id="message" placeholder="Message..." required></textarea>
-                <button type="submit"> Send Message </button>
-            </form>
-            <div class="social-icons-form">
-                <a href="https://www.microsoft.com/" target="_blank""><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <!-- Aside con la imagen -->
+                <div class="col-lg-4">
+                    <aside class="aside-image-contact">
+                        <img src="../assets/img/aside-contactus.jpeg" alt="Aside Image" class="img-fluid rounded-4">
+                    </aside>
+                </div>
+                <!-- Formulario -->
+                <div class="col-lg-8">
+                    <form class="booking-form border border-2 rounded-4 p-4 m-5 bg-secondary d-flex flex-column justify-content-center" action="submit.php" method="post">
+                        <section class="page-title">
+                            <h1 class="text-primary text-center">Contact Us</h1>
+                        </section>
+                        <input type="text" id="name" name="name" class="form-control mb-3" placeholder="Full name" required>
+                        <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Email address" required>
+                        <input type="tel" id="phone" name="phone" class="form-control mb-3" placeholder="Phone number (optional)">
+                        <textarea id="message" name="message" class="form-control mb-3" rows="4" placeholder="Message..." required></textarea>
+                        <button type="submit" class="btn btn-primary w-50 mx-auto bg-info border border-0 fw-semibold">Send Message</button>
+                        <div class="social-icons-form mx-auto p-2 mt-3 d-flex justify-content-between gap-5">
+                            <a href="https://www.microsoft.com/" target="_blank"><i class="fa-solid fa-envelope text-primary"></i></a>
+                            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i class="fa-brands fa-whatsapp text-primary"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook text-primary"></i></a>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </section>
+        </div>        
         <!-- TERMS AND POLITICS-->
         </div>
         <section>
-            <div class="terms">
-                <h1>TERMS AND POLITICS</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis blanditiis rerum saepe repellat nostrum? Nemo saepe itaque nobis consequuntur, distinctio odit at, debitis aspernatur illum, rerum sequi esse. In, enim.
-                Delectus fugit aliquid laudantium vero architecto harum similique rerum voluptatibus. Totam in illum iure et, dolores quidem quia assumenda nostrum pariatur, quos corrupti quod! Aut modi iste saepe praesentium ullam.
-                Odit libero repellendus labore facilis ducimus? Quo id quae vitae suscipit voluptate similique est voluptas error voluptatibus nam officia, nostrum ratione vero voluptatum eligendi perspiciatis quaerat ipsum culpa provident nisi.</p>
+            <div class="terms  container py-3 my-3">
+                <h1 class="fw-medium fs-3">TERMS AND POLITICS</h1>
+                <p>Welcome to Meow Manor, your premier destination for temporary cat lodging! We're delighted to offer a comfortable and safe environment for your beloved feline friends. Before booking your stay with us, please take a moment to review our policies and terms:
+
+                    Booking Confirmation: Your booking is confirmed once full payment is received. We accept payment via credit card or online transfer.
+                    
+                    Cancellation Policy: Cancellations made at least 48 hours before the scheduled check-in date will receive a full refund. Cancellations made within 48 hours of the check-in date will incur a 50% cancellation fee.
+                    
+                    Check-In and Check-Out: Check-in time is from 12:00 PM to 6:00 PM. Check-out time is by 12:00 PM on the departure date. Late check-outs may incur additional charges.
+                    
+                    Health and Vaccination Requirements: All cats must be up-to-date on vaccinations, including rabies and feline distemper. Proof of vaccination from a licensed veterinarian is required upon check-in.
+                    
+                    Behavior: We strive to provide a peaceful environment for all our guests. Aggressive or disruptive behavior from any cat may result in early termination of the stay without refund.
+                    
+                    Emergency Contact: Please provide an emergency contact number where you can be reached during your cat's stay with us.
+                    
+                    Liability: While every effort is made to ensure the safety and well-being of your cat, Meow Manor is not liable for any injuries, illnesses, or accidents that may occur during the stay.
+                    
+                    By booking a stay with us, you agree to abide by these policies and terms. If you have any questions or concerns, feel free to contact us. We look forward to welcoming your furry friend to Meow Manor!</p>
             </div>
         </section>
     </main>
