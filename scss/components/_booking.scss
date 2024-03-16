@@ -1,0 +1,16 @@
+/*BOOKING*/
+.booking-form{
+    @include box-shadow(10px 10px 10px 2px rgba(0, 0, 0, 0.329) !important);
+}
+
+.form-control{
+    padding: 5px;
+    margin-top: 5%;
+
+}
+
+.aside img{
+    width: 900px;
+    height: 140vh;
+    object-fit: cover;
+}
