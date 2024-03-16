@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media (max-width: 768px) {
   .aside-image-contact img {
     padding-top: 20px;
@@ -61,7 +60,7 @@
     width: 100%;
   }
 }
-/* Animación para los botones de la barra de navegación */
+/* Nav bar animations */
 .navbar-nav .nav-link {
   transition: transform 0.3s ease-in-out;
 }
@@ -72,7 +71,7 @@
   color: #6402c0 !important;
 }
 
-/* Animación para todos los botones */
+/* Animation for all buttons */
 .btn {
   transition: transform 0.3s ease-in-out;
 }
@@ -81,6 +80,51 @@
   transform: scale(1.1);
   background-color: #ffffff !important;
   color: #6402c0 !important;
+}
+
+/*Gallery animations*/
+.gallery-container .col-md-4 {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.gallery-container .col-md-4:hover {
+  transform: scale(1.1);
+}
+.gallery-container .col-md-4::after {
+  content: "Click to see more details";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.gallery-container .col-md-4:hover::after {
+  opacity: 1;
+}
+
+.card-container {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+.card-services {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-services:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(132, 0, 255, 0.863) !important;
 }
 
 /*NAVBAR*/
@@ -103,6 +147,14 @@
 .card-img {
   height: 500px;
   border-radius: 0;
+}
+
+#card-info-img {
+  height: 50vh;
+  background: linear-gradient(to right, rgba(49, 1, 49, 0.431372549), rgba(49, 1, 49, 0)), url("../assets/img/banner-info.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card {

@@ -22,6 +22,14 @@
     border-radius: 0;
 }
 
+#card-info-img{
+    height: 50vh;
+    background: linear-gradient(to right,#3101316e, #31013100), url("../assets/img/banner-info.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .card {
     border: none;
     border-radius: 0;

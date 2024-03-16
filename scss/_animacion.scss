@@ -1,4 +1,4 @@
-/* Animación para los botones de la barra de navegación */
+/* Nav bar animations */
 .navbar-nav .nav-link {
     transition: transform 0.3s ease-in-out;
 }
@@ -9,7 +9,7 @@
     color: $info-color;
 }
 
-/* Animación para todos los botones */
+/* Animation for all buttons */
 .btn {
     transition: transform 0.3s ease-in-out;
 }
@@ -18,4 +18,54 @@
     transform: scale(1.1);
     background-color: #ffffff !important;
     color: $info-color;
+}
+
+/*Gallery animations*/
+
+.gallery-container {
+    .col-md-4 {
+      overflow: hidden; 
+      transition: transform 0.3s ease; 
+  
+      &:hover {
+        transform: scale(1.1); 
+      }
+      &::after {
+        content: "Click to see more details"; 
+        position: absolute; 
+        bottom: 10px; 
+        left: 50%;
+        transform: translateX(-50%); 
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: white; 
+        padding: 5px 10px; 
+        border-radius: 5px; 
+        font-size: 14px; 
+        transition: opacity 0.3s ease;
+        opacity: 0; 
+      }
+  
+      &:hover::after {
+        opacity: 1; 
+      }
+    }
+  }
+
+.card-container {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+}
+
+.card-services {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-services:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(132, 0, 255, 0.863) !important;
 }
