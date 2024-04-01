@@ -1,0 +1,7 @@
+@mixin box-shadow($value) {
+    box-shadow: $value;
+}
+
+@mixin text-shadow($value) {
+    text-shadow: $value;
+}

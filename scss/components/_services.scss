@@ -1,0 +1,15 @@
+/*SERVICES*/
+.card-img-top{
+    height: map-get($height-map, h-300px);
+    object-fit: cover;
+}
+
+.card-services{
+    @include box-shadow(5px 5px 5px 1px rgba(0,0,0,0.1) !important);
+    height: map-get($height-map, h-500px);
+}
+
+.card-img-overlay h5{
+    text-align: justify;
+    @include text-shadow(2px 2px 4px rgb(73, 73, 73) !important);
+}

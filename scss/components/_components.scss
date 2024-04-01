@@ -1,0 +1,50 @@
+/*NAVBAR*/
+.bg-primary{
+    background-color: $primary-bg-color;
+}
+
+.bg-secondary{
+    background-color: $secondary-bg-color;
+}
+
+.text-primary{
+    color: $primary-text-color;
+}
+
+
+.video-banner{
+    height: map-get($height-map, h-500px);
+}
+
+
+.card-img{
+    height: map-get($height-map, h-500px);
+    border-radius: 0;
+}
+
+#card-info-img{
+    height: 50vh;
+    background: linear-gradient(to right,#3101316e, #31013100), url("../assets/img/banner-info.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+}
+
+.card-container {
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    @include box-shadow(5px 5px 5px 1px rgba(0,0,0,0.1) !important);
+}
+
+body {
+    font-family: $primary-font;
+}
+
+.bg-info {
+    background-color: $info-color;
+}
